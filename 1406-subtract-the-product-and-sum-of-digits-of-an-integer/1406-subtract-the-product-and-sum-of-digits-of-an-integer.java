@@ -8,6 +8,6 @@ class Solution {
             sum += remainder;
             n = n / 10;
         }
-        return (prod - sum);
+        return prod - sum;
     }
 }
