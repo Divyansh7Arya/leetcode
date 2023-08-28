@@ -1,5 +1,8 @@
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
+        if (image == null || image.length == 0 || image[0].length == 0) {
+            return image;
+        }
         int start,end; // variables to swap
         int l = image[0].length;
         for(int i = 0;i < l;i++) {
