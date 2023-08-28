@@ -1,8 +1,6 @@
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {
         int arr[][] = new int [m][n];
-        int l = indices.length;
-        int x;
         int flag ;
         int odd = 0;
         for (int[] row : indices) {
