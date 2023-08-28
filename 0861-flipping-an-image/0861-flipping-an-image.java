@@ -4,6 +4,14 @@ class Solution {
         int start,end; // variables to swap
         int l = image[0].length;
         for(int i = 0;i < l;i++) {
+             for(int j = 0;j < l;j++) {
+                if(image[i][j] == 0) {
+                    image[i][j] = 1;
+                }
+                else {
+                    image[i][j] = 0;
+                }
+             }
                 start = 0;
                 end = l-1;
                 // swapping
@@ -16,16 +24,10 @@ class Solution {
             }
         }
         // Inverting
-        for(int i = 0;i < l;i++) {
-            for(int j = 0;j < l;j++) {
-                if(image[i][j] == 0) {
-                    image[i][j] = 1;
-                }
-                else {
-                    image[i][j] = 0;
-                }
-            }
-        }
+        // for(int i = 0;i < l;i++) {
+           
+        //     }
+        // }
         return image;
     }
 }
