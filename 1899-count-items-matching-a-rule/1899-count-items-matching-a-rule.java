@@ -10,10 +10,11 @@ class Solution {
         } else {
             x = 2;
         }
-        for(List<String> row : items) {
-                if(row.get(x).equals(ruleValue)) {
+        for(int i = 0; i < items.size(); i++) {
+                if(items.get(i).get(x).equals(ruleValue)) {
                     cnt ++;
                 }
+
         }
         return cnt;
     }
