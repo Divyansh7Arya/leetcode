@@ -11,11 +11,9 @@ class Solution {
             x = 2;
         }
         for(int i = 0; i < items.size(); i++) {
-        //   for(int j = 0; j < items.size(); j++) {
                 if(items.get(i).get(x).equals(ruleValue)) {
                     cnt ++;
                 }
-         //   }
         }
         return cnt;
     }
