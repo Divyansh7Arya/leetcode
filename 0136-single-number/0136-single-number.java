@@ -5,8 +5,8 @@ class Solution {
         // xor with 0 = a
         // xor with a = 0
         // so we xor whole array, only single appearing number will be left
-        for(int i = 0; i < nums.length;i++) {
-            unique ^= nums[i];
+        for(int i : nums) {
+            unique ^= i;
         }
         return unique;
     }
