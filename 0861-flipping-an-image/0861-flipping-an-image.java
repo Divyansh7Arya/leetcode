@@ -13,9 +13,12 @@ class Solution {
             }
                 // swapping
                 while(start < end) {
-                image[i][start] = image[i][start] + image[i][end];
-                image[i][end] = image[i][start] - image[i][end];
-                image[i][start] = image[i][start] - image[i][end];
+                //image[i][start] = image[i][start] + image[i][end];
+               // image[i][end] = image[i][start] - image[i][end];
+               // image[i][start] = image[i][start] - image[i][end];
+               int temp = image[i][start];
+               image[i][start] = image[i][end];
+               image[i][end] = temp;
                 image[i][start] ^= 1;
                 image[i][end] ^= 1;
                 start++;
