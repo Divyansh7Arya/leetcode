@@ -7,10 +7,10 @@ class Solution {
         int acnt = 0;
         int bcnt = 0;
         for(int i = 0;i < s.length() / 2; i ++) {
-            if(a.charAt(i) == 'a' || a.charAt(i) == 'e' || a.charAt(i) == 'i' || a.charAt(i) == 'o' || a.charAt(i) == 'u' || a.charAt(i) == 'A' || a.charAt(i) == 'E' || a.charAt(i) == 'I' || a.charAt(i) == 'O' || a.charAt(i) == 'U' ) {
+            if(Character.toLowerCase(a.charAt(i)) == 'a' || Character.toLowerCase(a.charAt(i)) == 'e' || Character.toLowerCase(a.charAt(i)) == 'i' || Character.toLowerCase(a.charAt(i)) == 'o' || Character.toLowerCase(a.charAt(i)) == 'u' ) {
                 acnt++;
             }
-            if(b.charAt(i) == 'a' || b.charAt(i) == 'e' || b.charAt(i) == 'i' || b.charAt(i) == 'o' || b.charAt(i) == 'u' || b.charAt(i) == 'A' || b.charAt(i) == 'E' || b.charAt(i) == 'I' || b.charAt(i) == 'O' || b.charAt(i) == 'U' ) {
+            if(Character.toLowerCase(b.charAt(i)) == 'a' || Character.toLowerCase(b.charAt(i)) == 'e' || Character.toLowerCase(b.charAt(i)) == 'i' || Character.toLowerCase(b.charAt(i)) == 'o' || Character.toLowerCase(b.charAt(i)) == 'u' ) {
                 bcnt++;
             }
         }
