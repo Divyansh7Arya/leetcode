@@ -1,7 +1,7 @@
 class Solution {
     public boolean halvesAreAlike(String s) {
-        String a = s.substring(0,s.length() / 2);
-        String b = s.substring(s.length() / 2,s.length());
+        StringBuilder a = new StringBuilder(s.substring(0,s.length() / 2));
+        StringBuilder b = new StringBuilder(s.substring(s.length() / 2,s.length()));
         System.out.println(a);
         System.out.println(b);
         int acnt = 0;
