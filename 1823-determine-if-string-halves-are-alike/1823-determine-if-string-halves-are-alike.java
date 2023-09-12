@@ -11,9 +11,9 @@ class Solution {
                 acnt++;
             }
             if(Character.toLowerCase(b.charAt(i)) == 'a' || Character.toLowerCase(b.charAt(i)) == 'e' || Character.toLowerCase(b.charAt(i)) == 'i' || Character.toLowerCase(b.charAt(i)) == 'o' || Character.toLowerCase(b.charAt(i)) == 'u' ) {
-                bcnt++;
+                acnt--;
             }
         }
-        return acnt == bcnt;
+        return acnt == 0;
     }
 }
