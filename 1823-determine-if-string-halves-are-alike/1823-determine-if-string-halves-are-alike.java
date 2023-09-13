@@ -1,10 +1,8 @@
 class Solution {
     public boolean halvesAreAlike(String s) {
         String sb = s.toLowerCase();
-        StringBuilder a = new StringBuilder(sb.substring(0,sb.length() / 2));
-        StringBuilder b = new StringBuilder(sb.substring(sb.length() / 2,sb.length()));
-      //  System.out.println(a);
-     //   System.out.println(b);
+        String a = (sb.substring(0,sb.length() / 2));
+        String b = (sb.substring(sb.length() / 2,sb.length()));
         int acnt = 0;
         int bcnt = 0;
         for(int i = 0;i < s.length() / 2; i ++) {
@@ -18,3 +16,9 @@ class Solution {
         return acnt == 0;
     }
 }
+// int cnt (String s ) {
+//     int arr[] = s.toCharArray();
+//     for(int i = 0; i < s.length(); i++) {
+//         if(arr[i])
+//     }
+// }
