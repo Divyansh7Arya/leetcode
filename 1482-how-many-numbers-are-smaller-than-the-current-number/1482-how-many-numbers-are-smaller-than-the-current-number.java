@@ -9,12 +9,7 @@ class Solution {
         // but there is no indexof in aray
         // so we store it in hashmap where the value is index of 8
         HashMap<Integer,Integer> map = new HashMap();
-        int[] arr = new int [nums.length];
-        
-        System.arraycopy(nums, 0, arr,
-                                            0, nums.length);
-
-        
+        int[] arr = Arrays.copyOf(nums,nums.length);
         Arrays.sort(nums);
         for(int i = nums.length - 1;i >= 0; i --) map.put(nums[i],i);
         for(int i = 0; i < nums.length;i++) arr[i] = map.get(arr[i]);
