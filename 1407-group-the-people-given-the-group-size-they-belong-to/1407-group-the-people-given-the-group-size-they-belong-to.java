@@ -15,12 +15,9 @@ class Solution {
                         groupSizes[j] = 0;
                     }
                 }
-                ans.add(temp);
+                if(temp.size() > 0) ans.add(temp);
             }
         }
-
-
-
         return ans;
     }
 }
