@@ -3,13 +3,16 @@ class Solution {
         HashMap<Character,Integer> map = new HashMap();
         HashMap<Integer,Character> alpha = new HashMap();
         int cnt = 1;
-        char temp = 'a';
+        int temp = 97;
         for(char x : key.toCharArray()) {
             if(x != ' ' && map.containsKey(x) == false) {
                 map.put(x,cnt++);
             }
         }
-        for(int i = 1; i <= 26;i++ ) alpha.put(i,temp++);
+        for(int i = 1; i <= 26;i++ ) {
+            alpha.put(i,(char)temp);
+            temp++;
+        }
         StringBuilder s = new StringBuilder();
         for(char x : message.toCharArray()) {
             if(x == ' ') s.append(" ");
