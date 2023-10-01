@@ -3,18 +3,16 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap();
         List<List<Integer>> ans = new ArrayList();
         // frequency distribution
+        int maxv = 1;
         for(int i = 0; i < nums.length;i++) {
             if(map.containsKey(nums[i])) {
-                map.put(nums[i],map.get(nums[i]) + 1);
+                int possible = map.get(nums[i]) + 1;
+                if(possible > maxv) maxv = possible;
+                map.put(nums[i],possible);
             }
             else map.put(nums[i],1);
         }
         int n = map.size();
-        int maxv = 0;
-        for(Integer x : map.values()) {
-            if(x > maxv) 
-            maxv = x;
-        }
         for(int i = 0; i < maxv;i++) {
             int flag = 0;
             List<Integer> temp = new ArrayList();
